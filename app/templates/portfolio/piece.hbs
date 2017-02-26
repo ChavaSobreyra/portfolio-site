@@ -1,0 +1,35 @@
+<div class="container">
+  {{#link-to 'portfolio'}}&larr; Back to Portfolio{{/link-to}}
+  <hr class="sm spaceOnly">
+  <h2>{{model.title}}</h2>
+  <div class="row">
+    <div class="col-sm-8">
+      <p class="url"><a href="{{model.url}}">{{model.url}}</a></p>
+
+      {{#if model.body}}
+        {{#each model.body as |paragraph|}}
+          <p>{{paragraph}}</p>
+        {{/each}}
+      {{/if}}
+      <hr class="sm spaceOnly">
+      {{#if model.images}}
+          {{#each model.images as |image|}}
+            <img src="{{image}}" alt="" class="img-responsive">
+          {{/each}}
+      {{/if}}
+    </div>
+    <div class="col-sm-4">
+      <h3>Techonlogies Used:</h3>
+      {{#if model.technologies}}
+        <ul>
+          {{#each model.technologies as |technology|}}
+            <li>{{technology}}</li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    </div>
+  </div>
+</div>
+
+
+{{outlet}}

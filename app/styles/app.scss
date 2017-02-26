@@ -1,0 +1,185 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*********************
+Global Styles & Resets
+*********************/
+//remove dotted borders on IE and Firefox
+a:active, a:visited, a:selected, a:focus {
+  border: none !important;
+  outline: none !important;
+  outline-style: none !important;
+}
+a{
+  outline: none !important;
+  outline-style: none !important;
+}
+
+select:focus, select:active{
+  outline: none;
+}
+
+html, body{
+  font-family: "Roboto", Helvetica, arial, sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  color: rgba(0,0,0,.8);
+}
+a{
+  color: #e36262;
+  &:hover, &:focus{
+    color: darken(#e36262, 20%);
+  }
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Roboto", Helvetica, arial, sans-serif;
+}
+
+p{
+  font-family:  Georgia, serif;
+  line-height: 1.58;
+  font-weight: 400;
+}
+
+ul{
+  list-style: disc;
+  margin-bottom: 20px;
+
+  li{
+    margin: 15px 0 0;
+  }
+}
+
+
+
+.site-nav{
+  &.overlaid{
+    position: absolute;
+    top: 0;
+    .nav-menu {
+      a {
+        color: white;
+      }
+    }
+  }
+  #siteName{
+    padding: 15px 0;
+    display: inline-block;
+  }
+  .nav-menu{
+    a{
+      float: left;
+      display: inline-block;
+      font-size: 24px;
+      padding: 17px 20px 20px;
+      border-top: 3px solid transparent;
+       &.active{
+         border-top: 3px solid #e36262;
+         color: #e36262;
+       }
+
+       &.active{
+        color: #e36262;
+        border-top: 3px solid #e36262;
+        text-decoration: none;
+      }
+      &:focus, &:hover{
+        text-decoration: none;
+        color: #e36262;
+      }
+
+    }
+  }
+
+}
+
+
+.entry{
+  h2{
+    margin-bottom: .75em;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  p{
+    text-align: justify;
+  }
+}
+
+
+hr{
+  margin: 30px auto;
+  &.white{
+    border-top-color: rgb(200,200,200);
+    border-top-color: rgba(255,255,255,.3);
+  }
+  &.gray{
+    border-top-color: rgb(170,170,170);
+    border-top-color: rgba(0,0,0,.1);
+  }
+  &.left{
+    margin-left: 0;
+  }
+  &.xs{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &.small, &.sm{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &.md{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @media only screen and (min-width : 768px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &.jonSized{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    @media only screen and (min-width : 768px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  &.large, &.lg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @media only screen and (min-width : 768px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  &.xl{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media only screen and (min-width : 768px) {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  &.short{
+    width: 40px;
+  }
+  &.spaceOnly{
+    border-top-color: rgba(0,0,0,0);
+  }
+  &.noMargin{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  border-top-color: #f5f5f5;
+
+  &.or{
+    text-align: center;
+    &:after{
+      content: 'or';
+      display: inline-block;
+      position: relative;
+      top: -0.8em;
+      font-size: 1em;
+      padding: 0 1em;
+      background: white;
+    }
+  }
+}
