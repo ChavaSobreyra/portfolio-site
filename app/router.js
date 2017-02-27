@@ -11,7 +11,6 @@ Router.map(function() {
   this.route('portfolio', function() {
     this.route('piece', { path: '/:piece_slug' });
   });
-  this.route('about-me');
 });
 
 export default Router;
