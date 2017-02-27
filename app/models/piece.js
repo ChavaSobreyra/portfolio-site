@@ -7,4 +7,11 @@ export default DS.Model.extend({
   body: DS.attr(''),
   images: DS.attr(''),
   technologies: DS.attr(''),
+  humanUrl: Ember.computed('url', function(){
+    if (this.get('url')){
+      return this.get('url').replace('http://','').replace('.com/', '.com');
+    } else {
+      return null
+    }
+  })
 });

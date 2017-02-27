@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container ">
   {{#link-to 'portfolio'}}&larr; Back to Portfolio{{/link-to}}
   <hr class="sm spaceOnly">
   <h2>{{model.title}}</h2>
   <div class="row">
-    <div class="col-sm-8">
-      <p class="url"><a href="{{model.url}}">{{model.url}}</a></p>
+    <div class="col-sm-7">
+      <p class="url"><a href="{{model.url}}">{{model.humanUrl}}</a></p>
 
       {{#if model.body}}
         {{#each model.body as |paragraph|}}
@@ -15,10 +15,11 @@
       {{#if model.images}}
           {{#each model.images as |image|}}
             <img src="{{image}}" alt="" class="img-responsive">
+            <hr class="sm spaceOnly">
           {{/each}}
       {{/if}}
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-sm-offset-1">
       <h3>Techonlogies Used:</h3>
       {{#if model.technologies}}
         <ul>

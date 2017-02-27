@@ -26,7 +26,7 @@ export default Ember.Route.extend({
     let exp = this.store.createRecord('piece', {
       title: "EXP Website",
       slug: "exp",
-      url: "www.exp-inc.com",
+      url: "http://www.exp-inc.com",
       body: [
         "EXP is a leading provider of world-class quality, environment, health and saftey enterprise-level software solutions.",
         "When EXP (formerly EXP-Hazox) split from its partner, Hazox, there was an immediate need for a new design identity, logo, website, branding brochure, and more."
@@ -139,7 +139,6 @@ export default Ember.Route.extend({
     let conan = this.store.createRecord('piece', {
       title: "Conan - Conference Application Prototype",
       slug: "conan",
-      url: "http://support.crcnetbase.com/",
       body: [
         "The CRC Conference Application (Conan for short) is an iPad application in development that will allow Taylor and Francis representatives attending conferences to process orders that is connected to the CRC Press core application which allows it to read and update inventory levels and more."
       ],
