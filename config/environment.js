@@ -38,7 +38,7 @@ module.exports = function(environment) {
       apiKey: "AIzaSyAm3eVTWsFJAhmLh-Im7SaakNlUIoFfvUo",
       authDomain: "chavasobreyra-b9945.firebaseapp.com",
       databaseURL: "https://chavasobreyra-b9945.firebaseio.com",
-      storageBucket: "chavasobreyra-b9945.appspot.com",
+      storageBucket: "chavasobreyra-b9945.appspot.com"
     }
   };
 

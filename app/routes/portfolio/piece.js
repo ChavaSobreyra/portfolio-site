@@ -163,7 +163,8 @@ export default Ember.Route.extend({
       slug: "worksite-webcams",
       url: "http://worksitewebcams.com/",
       body: [
-        "I had previously done some maintenance work and minor enhancements on Worksite Webcams' aging PHP application. There were so many points of failure that it was a liability to the business. I proposed a ground up rebuild which would save money in the long run. Today, Worksite Webcam's is a full-stack MEEN (mongo express ember node) application. I also developed a new event-based ETL system for backend asset processing. I controlled versioning through git and GitHub. The app is deployed using AWS EC2, Elastic Beanstalk, S3, and MLab. The application also consumes external APIs for supplementary meta data collection."
+        "I had previously done some maintenance work and minor enhancements on Worksite Webcams' aging PHP application. There were so many points of failure that it was a liability to the business. I proposed a ground up rebuild which would pay for itself in months by reducing hosting costs, not to mention a vastly improved user experience.",
+        "Today, Worksite Webcams is a full-stack MEEN (mongo express ember node) application. For the application, I also developed a new event-based ETL system for backend asset processing. The app hosting/deployment uses AWS EC2, Elastic Beanstalk, S3, and MLab. The application consumes external APIs for supplementary meta data collection."
       ],
       images: [
         "/images/wwc.jpg"
