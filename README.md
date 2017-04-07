@@ -1,5 +1,5 @@
 # ChavaSobreyra.com Portfolio Site
 
 ## Description
-This application was created using Ember.js v2.12 and Firebase. It features server side rendering throug ember-cli-fastboot. Visit [chavasobreyra.com](http://www.chavasobreyra.com)
+This web site is a single page application written using Ember.js v2.12 and Firebase. It features server side rendering through ember-cli-fastboot. Visit [chavasobreyra.com](http://www.chavasobreyra.com)
 
