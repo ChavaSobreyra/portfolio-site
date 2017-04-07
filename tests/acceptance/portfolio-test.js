@@ -11,15 +11,12 @@ test('visiting /portfolio', function(assert) {
   });
 });
 
-  //
-  // test('/portfolio has a list of peieces', function(assert) {
-  //   visit('/portfolio');
-  //
-  //   andThen(function() {
-  //     const pieces = find('.pieces');
-  //
-  //     assert.gte(pieces.length > 0);
-  //
-  //
-  //   });
-  // });
+
+test('/portfolio has a list of peieces', function(assert) {
+  visit('/portfolio');
+
+  andThen(function() {
+    const pieces = find('.pieces');
+    assert.notEqual(pieces.length, 0);
+  });
+});
